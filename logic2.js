@@ -40,9 +40,10 @@ $("#me").on({
       timer = setTimeout(function(){
         unlocked.style.display = "flex";
         wrapper.style.display = "none";
-      setTimeout(function(){
-        window.location = "https://iamcmk.github.io/kdfjhgfdug5.html"
-      }, 2000)
+        setTimeout(function(){
+            window.location = "https://iamcmk.github.io/kdfjhgfdug5.html"
+        }, 2000)
+      
     }, 10000);
 
     },

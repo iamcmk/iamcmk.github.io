@@ -3,11 +3,18 @@ var responseBtn1 = document.getElementById('riddleBtn1');
 var responseBtn2 = document.getElementById('riddleBtn2');
 var notification = document.getElementById('notification');
 var unlockedScreen = document.getElementById('unlocked');
-var wrapper = document.getElementById('wrapper');
+var wrapper = document.getElementById('wrapper1');
+var introSplash = document.getElementById('introSplash');
 
 console.log(riddleResponse);
 
 console.log(window.location);
+
+$( document ).ready(function() {
+    wrapper.style.display = "none";
+});
+
+
 
 responseBtn1.addEventListener("click", function() {
 var input = riddleResponse.value;
@@ -33,4 +40,10 @@ setTimeout(function() {
 } else {
 notification.innerHTML = "Try again adventurer";
 }
+});
+
+
+$( "#introSplash" ).click(function() {
+  wrapper.style.display = "flex";
+introSplash.style.display = "none";
 });
