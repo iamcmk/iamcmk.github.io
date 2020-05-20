@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+  <div id="unlocked" class="unlocked">
+    Congratulations!<br>
+    Welcome to the next round
+  </div>
+
+
+<div id="wrapper" class="wrapper">
+
+<div class="riddle-clue riddle-title"> Puzzle 3</div>
+  <div class="riddle-clue riddle-clue3">
+    Haga clic cuatro veces en la última letra de esta oració<span id="lastletter">n</span>
+  </div>
+
+
+  <script src = "logic2.js"></script>
+</body>
+</html>
