@@ -106,3 +106,9 @@ $("#right").on('click', function(){
   clicked = false;
 
 });
+
+
+
+
+
+
