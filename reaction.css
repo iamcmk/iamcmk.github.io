@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'DM Mono', monospace;
+  color: #fff;
+
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+h1 {
+  font-size: 25px;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+p {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.6;
+  opacity: 0.5;
+}
+[data-am-game] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e04646;
+  cursor: pointer;
+}
+[data-am-game].activated {
+  background-color: #62d64e;
+}
+[data-am-game] .center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+[data-am-game] .center-content > * {
+  cursor: default;
+}
+
+.smaller {
+  font-size: 18px;
+  margin-bottom: 20px;
+}

@@ -18,11 +18,9 @@ $( "#riddleBtn2" ).click(function() {
 $( "#lastletter" ).on('click', function(){
    count++
   if (count == 4) {
-    unlocked.style.display = "flex";
-    wrapper.style.display = "none";
-    setTimeout(function() {
-      window.location = "https://iamcmk.github.io/khjhnudsghn4.html"
-    }, 2000);
+
+      window.location = "https://iamcmk.github.io/khjhnudsghn31.html"
+
   }
 });
 
@@ -39,7 +37,7 @@ $("#me").on({
             window.location = "https://iamcmk.github.io/kdfjhgfdug5.html"
         }, 2000)
 
-    }, 9000);
+    }, 7000);
 
     },
     mouseup: function () {
@@ -71,7 +69,7 @@ console.log(moveNumberCount);
     clicked = true;
   };
 
-if (moveNumberCount == 17) {
+if (moveNumberCount == 31) {
 sequance.style.color = "green";
 lockInNotification.innerHTML = "Good job adventurer, you have unlocked part 2 of this problem."
 sequance.style.textDecoration = "line-through"
@@ -80,7 +78,7 @@ numberRender.style.textDecoration = "none"
 left.style.display = "none";
 right.style.display = "none";
 $( "[name*='strike']" ).removeClass( "strike" )
-} else if (moveNumberCount != 17) {
+} else if (moveNumberCount != 31) {
 sequance.style.color = "red";
 }
 
