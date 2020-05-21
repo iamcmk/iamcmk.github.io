@@ -71,7 +71,7 @@ console.log(moveNumberCount);
     clicked = true;
   };
 
-if (moveNumberCount == 1) {
+if (moveNumberCount == 17) {
 sequance.style.color = "green";
 lockInNotification.innerHTML = "Good job adventurer, you have unlocked part 2 of this problem."
 sequance.style.textDecoration = "line-through"
