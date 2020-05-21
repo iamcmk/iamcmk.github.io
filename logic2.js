@@ -19,7 +19,7 @@ $( "#lastletter" ).on('click', function(){
    count++
   if (count == 4) {
 
-      window.location = "https://iamcmk.github.io/khjhnudsghn31.html"
+      window.location = "https://iamcmk.github.io/oieqrhgjisdfb31.html"
 
   }
 });
