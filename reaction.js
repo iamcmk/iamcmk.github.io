@@ -9,7 +9,7 @@ function appendMenu() {
 	game.append(
 		'<div class="center-content">' +
       '<p class="smaller"> Puzzle 3 (The real one)</p>' +
-			'<h1>Your reaction spped will now be tested</h1>' +
+			'<h1>Your reaction speed will now be tested</h1>' +
       '<p>Get equal to or below 0.30 to pass to the next round.</p>' +
 			'<p>Click/Tap on the screen as soon as it turns green</p>' +
 			'<p>Click to start</p>' +
@@ -34,7 +34,7 @@ function appendResult(result) {
 
     setTimeout(function() {
       window.location = "https://iamcmk.github.io/khjhnudsghn4.html"
-    }, 2000);
+    }, 1500);
   } else {
     passfail = "FAIL";
   }
