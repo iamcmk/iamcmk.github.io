@@ -16,12 +16,7 @@ $( "#riddleBtn2" ).click(function() {
 });
 
 $( "#lastletter" ).on('click', function(){
-
-
    count++
-
-  console.log(count);
-
   if (count == 4) {
     unlocked.style.display = "flex";
     wrapper.style.display = "none";
@@ -43,11 +38,73 @@ $("#me").on({
         setTimeout(function(){
             window.location = "https://iamcmk.github.io/kdfjhgfdug5.html"
         }, 2000)
-      
-    }, 10000);
+
+    }, 9000);
 
     },
     mouseup: function () {
       clearTimeout(timer);
     }
+});
+
+
+var moveNumberCount = 0;
+var lockInNotification = $('#lockIn')[0];
+var sequance = $('#sequance')[0];
+var left = $('#left')[0];
+var right = $('#right')[0];
+
+
+var numberRender = $('#movingNumber')[0];
+numberRender.innerHTML = moveNumberCount;
+
+var clicked;
+
+$("#movingNumber").on('click', function(){
+console.log(moveNumberCount);
+
+  if (clicked == true) {
+    numberRender.style.textDecoration = "none"
+    clicked = false;
+  }  else if (clicked != true) {
+    numberRender.style.textDecoration = "underline"
+    clicked = true;
+  };
+
+if (moveNumberCount == 1) {
+sequance.style.color = "green";
+lockInNotification.innerHTML = "Good job adventurer, you have unlocked part 2 of this problem."
+sequance.style.textDecoration = "line-through"
+sequance.style.opacity = "0.6";
+numberRender.style.textDecoration = "none"
+left.style.display = "none";
+right.style.display = "none";
+$( "[name*='strike']" ).removeClass( "strike" )
+} else if (moveNumberCount != 17) {
+sequance.style.color = "red";
+}
+
+});
+
+
+
+
+$("#left").on('click', function(){
+  moveNumberCount--
+  numberRender.innerHTML = moveNumberCount;
+  lockInNotification.style.display = "block";
+  sequance.style.color = "black";
+  numberRender.style.textDecoration = "none"
+  clicked = false;
+
+});
+
+$("#right").on('click', function(){
+  moveNumberCount++
+  numberRender.innerHTML = moveNumberCount;
+  lockInNotification.style.display = "block";
+  sequance.style.color = "black";
+  numberRender.style.textDecoration = "none"
+  clicked = false;
+
 });

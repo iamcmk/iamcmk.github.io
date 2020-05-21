@@ -19,19 +19,19 @@ $( document ).ready(function() {
 responseBtn1.addEventListener("click", function() {
 var input = riddleResponse.value;
 
-if (input == "Clock") {
+if (input == "Seven") {
 unlocked.style.display = "flex";
 wrapper.style.display = "none";
 setTimeout(function() {
   window.location = "https://iamcmk.github.io/oaifjghdfhg2.html"
 }, 2000);
-} else if (input == "A clock") {
+} else if (input == "seven") {
 unlocked.style.display = "flex";
 wrapper.style.display = "none";
 setTimeout(function() {
   window.location = "https://iamcmk.github.io/oaifjghdfhg2.html"
 }, 2000);
-} else if (input == "clock") {
+} else if (input == "7") {
 unlocked.style.display = "flex";
 wrapper.style.display = "none";
 setTimeout(function() {
