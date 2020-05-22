@@ -29,7 +29,7 @@ function appendResult(result) {
 
   var passfail;
 
-  if (result <= 0.50) {
+  if (result <= 0.30) {
     passfail = "PASS!"
 
     setTimeout(function() {
